@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050816;
+  --foreground: #ffffff;
+}
+
+body {
+  background: radial-gradient(circle at top, #10172a, #050816);
+  color: var(--foreground);
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #3b82f6;
+  opacity: 0.15;
+  filter: blur(120px);
+  border-radius: 9999px;
+  top: -100px;
+  left: -100px;
+}
+
+.hero-glow-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #8b5cf6;
+  opacity: 0.15;
+  filter: blur(120px);
+  border-radius: 9999px;
+  bottom: -100px;
+  right: -100px;
+}
