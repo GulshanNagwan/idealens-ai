@@ -27,16 +27,16 @@ export default function DashboardCards() {
       {cards.map((card, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="glass rounded-3xl p-6"
+          className="bg-white/10 border border-white/10 rounded-3xl p-6 shadow-xl"
         >
-          <h3 className="text-gray-400 text-sm">
+          <h3 className="text-gray-300 text-sm">
             {card.title}
           </h3>
 
-          <p className="text-4xl font-bold mt-3">
+          <p className="text-4xl font-bold mt-4">
             {card.value}
           </p>
         </motion.div>
